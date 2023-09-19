@@ -79,19 +79,19 @@ nav a {
 	margin-top: 1em;
 	margin-bottom: 60px;
 	font-size: 30px;
-	text-align: justify;
+	
 }
 .about-me__introduction {
 	font-family: 'Spectral', 'serif';
 	font-weight: 800;
 	font-style: italic;
 	width: 60%;
-	text-align: justify;
+	
 }
 #about-me p {
 	width: 80%;
 	font-size: 14px;
-	text-align: justify;
+	
 }
 
 #gallery {
