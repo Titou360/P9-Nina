@@ -133,11 +133,12 @@ nav a {
 .mg-prev, .mg-next {
 	width: 30px;
 	height: 30px;
-	border-radius: 00%;
+	border-radius: 100%;
 	justify-content: center;
 	align-items: center;
 	display: flex;
 	font-size: 24px;
+	color: blue;
 }
 
 .quote {
@@ -303,10 +304,6 @@ input[type="submit"] {
 		margin-bottom: 1em;
 	}
 
-	.details {
-		font-size: (1.275rem + 0.3vw);
-	}
-
 	#services .container::before{
 		width: 30%;
 		height: 100%;
@@ -366,4 +363,6 @@ input[type="submit"] {
 		width: 80%;
 	}
 }
+
+
 
