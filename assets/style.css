@@ -40,9 +40,8 @@ nav a {
 
 .social-link img {
 	width: 20px;
-	height: auto;
+	height: 20px;
 }
-
 #about {
 	display: flex;
 	background-color: #F6D2B8;
@@ -70,8 +69,8 @@ nav a {
 
 .picture img {
 	width: 100%;
+} 
 
-}
 #about-me {
 	flex: 2
 }
@@ -94,8 +93,12 @@ nav a {
 	
 }
 
+img.gallery-item.img-fluid {
+	width: 100%;
+	height: 100%;
+}
 #gallery {
-	/*	min-height: 100vh; */
+	min-height: 100vh;
 }
 .title{
 	text-align: center;
@@ -129,7 +132,9 @@ nav a {
 	height: 100%;
 	object-fit: cover;
 	padding: .5em;
+	cursor: pointer;
 }
+
 .mg-prev, .mg-next {
 	width: 30px;
 	height: 30px;
@@ -211,6 +216,11 @@ nav a {
 #contact .container {
 	display: flex;
 }
+
+.picture.left img, .picture.right img {
+	width: 426px;
+	height: 426px;
+}
 .picture.right::before {
 	content: ' ';
 	background-color: #BEB45A;
@@ -275,9 +285,9 @@ input[type="submit"] {
 		flex-direction: column;
 
 	}
-	.picture {
+	 .picture {
 		width: 50%;
-	}
+	} 
 	.picture.left::before {
 		width: 100%;
 		height: 30%;
@@ -343,7 +353,12 @@ input[type="submit"] {
 		padding-block: 1em;
 		text-align: center;
 	}
+	.picture.left img, .picture.right img {
+		width: 250px;
+		height: 250px;
+	}
 	.picture.left::before, .picture.right::before {
+		width: auto;
 		height: 150px;
 	}
 	#services .container {
@@ -361,6 +376,10 @@ input[type="submit"] {
 	}
 	.picture {
 		width: 80%;
+	}
+	.social-link img {
+		width: 10px;
+		height: 10px;
 	}
 }
 

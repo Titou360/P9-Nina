@@ -1,3 +1,5 @@
+$(document).ready(function() {
+
 (function($) {
   $.fn.mauGallery = function(options) {
     var options = $.extend($.fn.mauGallery.defaults, options);
@@ -261,3 +263,6 @@
     }
   };
 })(jQuery);
+
+
+});
