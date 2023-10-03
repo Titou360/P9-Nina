@@ -2,11 +2,11 @@
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-body">
-                            ${e?'<div class="mg-prev" style="cursor:pointer;position:absolute;top:50%;left:-15px;background:white;"><</div>':'<span style="display:none;" />'}
+                            ${e?'<div class="mg-prev" tabindex="0" style="cursor:pointer;position:absolute;top:50%;left:-15px;background:white;"><</div>':'<span style="display:none;" />'}
                             <img class="lightboxImage img-fluid" alt="Contenu de l'image affich\xe9e dans la modale au clique"/>
-                            ${e?'<div class="mg-next" style="cursor:pointer;position:absolute;top:50%;right:-15px;background:white;}">></div>':'<span style="display:none;" />'}
+                            ${e?'<div class="mg-next" tabindex="0" style="cursor:pointer;position:absolute;top:50%;right:-15px;background:white;}">></div>':'<span style="display:none;" />'}
                         </div>
                     </div>
                 </div>
-            </div>`)},showItemTags(t,e,l){var i='<li class="nav-item"><span class="nav-link active active-tag"  data-images-toggle="all">Tous</span></li>';a.each(l,function(a,t){i+=`<li class="nav-item active">
-                <span class="nav-link"  data-images-toggle="${t}">${t}</span></li>`});var s=`<ul class="my-4 tags-bar nav nav-pills">${i}</ul>`;"bottom"===e?t.append(s):"top"===e?t.prepend(s):console.error(`Unknown tags position: ${e}`)},filterByTag(){if(!a(this).hasClass("active-tag")){a(".active.active-tag").removeClass("active active-tag"),a(this).addClass("active-tag active");var t=a(this).data("images-toggle");a(".gallery-item").each(function(){a(this).parents(".item-column").hide(),"all"===t?a(this).parents(".item-column").show(300):a(this).data("gallery-tag")===t&&a(this).parents(".item-column").show(300)})}}}}(jQuery);
+            </div>`)},showItemTags(t,e,l){var i='<li class="nav-item"><span class="nav-link active active-tag" tabindex="0" data-images-toggle="all">Tous</span></li>';a.each(l,function(a,t){i+=`<li class="nav-item active">
+                <span class="nav-link" tabindex="0" data-images-toggle="${t}">${t}</span></li>`});var s=`<ul class="my-4 tags-bar nav nav-pills">${i}</ul>`;"bottom"===e?t.append(s):"top"===e?t.prepend(s):console.error(`Unknown tags position: ${e}`)},filterByTag(){if(!a(this).hasClass("active-tag")){a(".active.active-tag").removeClass("active active-tag"),a(this).addClass("active-tag active");var t=a(this).data("images-toggle");a(".gallery-item").each(function(){a(this).parents(".item-column").hide(),"all"===t?a(this).parents(".item-column").show(300):a(this).data("gallery-tag")===t&&a(this).parents(".item-column").show(300)})}}}}(jQuery);
