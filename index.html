@@ -38,7 +38,7 @@
     <meta name="msapplication-TileImage" content="/android-chrome-192x192.png" />
     <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet preload" as="style" fetchpriority="low" href="./assets/style/style.min.css" />
-    <link rel="stylesheet preload" as="style" fetchpriority="low" href="./assets/style/bootstrap_resume.css" defer/>
+    <link rel="stylesheet preload" as="style" fetchpriority="low" href="./assets/style/bootstrap_resume.css" defer />
   </head>
   <body>
     <div class="top-header">
@@ -84,11 +84,16 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img 
+            <img
               src=".assets/images/slider/ryoji-iwata-1920.webp"
-              srcset="./assets/images/slider/ryoji-iwata-1920.webp 1920w, ./assets/images/slider/ryoji-iwata-1000.webp 1000w"
+              srcset="
+                ./assets/images/slider/ryoji-iwata-1920.webp 1920w,
+                ./assets/images/slider/ryoji-iwata-1000.webp 1000w,
+                ./assets/images/slider/ryoji-iwata-1000.webp 500w
+              "
               sizes="
             (max-width: 1000px) 1000px,
+            (max-width: 768px) 500px,
             1920px"
               class="d-block w-100 h-100 img-carousel"
               alt="Un homme traversant une rue au Japon"
@@ -98,10 +103,13 @@
             <img
               loading="lazy"
               src="./assets/images/slider/nicholas-green-1920.webp"
-              srcset="./assets/images/slider/nicholas-green-1920.webp 1920w, ./assets/images/slider/nicholas-green-1000.webp 1000w"
+              srcset="./assets/images/slider/nicholas-green-1920.webp 1920w,
+                      ./assets/images/slider/nicholas-green-1000.webp 1000w,
+                      ./assets/images/slider/nicholas-green-500.webp 500w,"
               sizes="
-            (max-width: 1000px) 1000px,
-            1920px"
+              (max-width: 1000px) 1000px,
+              (max-width: 768px) 500px,
+              1920px"
               class="d-block w-100 h-100 img-carousel"
               alt="Une foule de fan à un concert"
             />
@@ -110,10 +118,13 @@
             <img
               loading="lazy"
               src="./assets/images/slider/edward-cisneros-1920.webp"
-              srcset="./assets/images/slider/edward-cisneros-1920.webp 1920w, ./assets/images/slider/edward-cisneros-1000.webp 1000w"
+              srcset="./assets/images/slider/edward-cisneros-1920.webp 1920w,
+                      ./assets/images/slider/edward-cisneros-1000.webp 1000w,
+                      ./assets/images/slider/edward-cisneros-500.webp 500w,"
               sizes="
-            (max-width: 1000px) 1000px,
-            1920px"
+              (max-width: 1000px) 1000px,
+              (max-width: 768px) 500px,
+              1920px"
               class="d-block w-100 h-100 img-carousel"
               alt="Un baiser renversant de jeunes mariés"
             />
@@ -150,7 +161,12 @@
             une lumière, et les rendre immortels, voilà ce qui me fait vibrer.
           </p>
           <p>
-            Nous passons notre vie à chercher le bonheur, et lorsque nous le trouvons, nous n'avons qu'une envie : le figer à travers le shooting photo pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager avec un plus grand nombre. Que ce soit pour un reportage mariage, une couverture d'entreprise, un événement spécial, un concert enflammé, ou simplement pour créer un portrait de famille mémorable, c'est ce que je vous propose : capturer ces merveilleux moments à travers mon regard, mon approche, ma technique. Rendre ces instants immortels afin que vous puissiez y puiser de l'amour, du bonheur, de la tendresse, et de la lumière à chaque fois que vous poserez les yeux sur vos photos.
+            Nous passons notre vie à chercher le bonheur, et lorsque nous le trouvons, nous n'avons qu'une envie : le figer à travers le shooting
+            photo pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager avec un plus grand nombre. Que ce soit pour un
+            reportage mariage, une couverture d'entreprise, un événement spécial, un concert enflammé, ou simplement pour créer un portrait de famille
+            mémorable, c'est ce que je vous propose : capturer ces merveilleux moments à travers mon regard, mon approche, ma technique. Rendre ces
+            instants immortels afin que vous puissiez y puiser de l'amour, du bonheur, de la tendresse, et de la lumière à chaque fois que vous
+            poserez les yeux sur vos photos.
           </p>
         </div>
       </section>
