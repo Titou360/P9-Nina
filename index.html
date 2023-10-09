@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-    <!-- Meta pour OpenGraph -->
+    <!-- Meta pour OpenGraph (Facebook)-->
     <meta property="og:title" content="Nina Carducci" />
     <meta property="og:locale" content="fr_FR" />
     <meta property="og:language" content="fr" />
@@ -38,7 +38,7 @@
     <meta name="msapplication-TileImage" content="/android-chrome-192x192.png" />
     <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet preload" as="style" fetchpriority="low" href="./assets/style/style.min.css" />
-    <link rel="stylesheet preload" as="style" fetchpriority="low" href="./assets/style/bootstrap_resume.css" />
+    <link rel="stylesheet preload" as="style" fetchpriority="low" href="./assets/style/bootstrap_resume.css" defer/>
     <!-- <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" > -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -88,7 +88,7 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img
+            <img 
               src=".assets/images/slider/ryoji-iwata-1920.webp"
               srcset="./assets/images/slider/ryoji-iwata-1920.webp 1920w, ./assets/images/slider/ryoji-iwata-1000.webp 1000w"
               sizes="
@@ -134,7 +134,7 @@
       </div>
     </header>
     <main>
-      <div id="about">
+      <section id="about">
         <div class="picture left">
           <img
             src="./assets/images/nina560.webp"
@@ -154,14 +154,11 @@
             une lumière, et les rendre immortels, voilà ce qui me fait vibrer.
           </p>
           <p>
-            Nous passons notre vie à chercher le bonheur, et lorsque nous le trouvons, nous n'avons qu'une envie : le figer à travers la photographie
-            pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager avec un plus grand nombre. C'est ce que je vous
-            propose : capturer ces merveilleux moments à travers mon regard, mon approche, ma technique. Rendre ces instants immortels afin que vous
-            puissiez y puiser de l'amour, du bonheur, de la tendresse, et de la lumière à chaque fois que vous poserez les yeux sur vos photos.
+            Nous passons notre vie à chercher le bonheur, et lorsque nous le trouvons, nous n'avons qu'une envie : le figer à travers le shooting photo pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager avec un plus grand nombre. Que ce soit pour un reportage mariage, une couverture d'entreprise, un événement spécial, un concert enflammé, ou simplement pour créer un portrait de famille mémorable, c'est ce que je vous propose : capturer ces merveilleux moments à travers mon regard, mon approche, ma technique. Rendre ces instants immortels afin que vous puissiez y puiser de l'amour, du bonheur, de la tendresse, et de la lumière à chaque fois que vous poserez les yeux sur vos photos.
           </p>
         </div>
-      </div>
-      <div id="gallery">
+      </section>
+      <section id="gallery">
         <h2 class="title">Portfolio</h2>
         <div class="container py-3">
           <div class="gallery" style="display: none">
@@ -241,8 +238,8 @@
           </figure>
           <footer class="quote__author">- Richard Avedon</footer>
         </div>
-      </div>
-      <div id="services">
+      </section>
+      <section id="services">
         <!--H3-->
         <h2 class="title">Mes services</h2>
         <div class="container">
@@ -283,7 +280,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <div class="quote">
         <figure>
           <blockquote>
@@ -295,7 +292,7 @@
         </figure>
         <footer class="quote__author">- Richard Avedon</footer>
       </div>
-      <div id="contact">
+      <section id="contact">
         <div class="container">
           <div class="form-container">
             <!--H3-->
@@ -305,7 +302,7 @@
               <label for="nom">Nom</label>
               <input type="text" name="nom" id="nom" />
               <label for="email">Email</label>
-              <input type="email" name="email" id="email" />
+              <input type="email" name="email" id="email" autocomplete="on" />
               <label for="message">Message</label>
               <textarea name="message" id="message" cols="30" rows="10"></textarea>
               <input type="submit" value="Envoyer" />
@@ -323,9 +320,9 @@
             />
           </div>
         </div>
-      </div>
+      </section>
     </main>
-    <script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
+    <!-- <script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script> -->
     <script src="./assets/scripts.js" defer></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -333,14 +330,14 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="./assets/maugallery.js"></script>
+    <script defer src="./assets/maugallery.js" defer></script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org/",
         "@type": "LocalBusiness",
         "name": "Nina Carducci",
         "description": "Photographe professionnel à Bordeaux",
-        "image": "https://titou360.github.io/P9-Nina/assets/images/nina560.webp"
+        "image": "https://titou360.github.io/P9-Nina/assets/images/nina560.webp",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "68 avenue Alsace-Lorraine",
